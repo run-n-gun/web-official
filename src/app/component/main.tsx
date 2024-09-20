@@ -21,7 +21,7 @@ const Main = () => {
           description="2024년 10월 출시 예정"
         />
         <Card 
-          imageSrc="/images/nail-art.png"
+          imageSrc="/images/cat-llm.png"
           title="동물의집 (가제)"
           description="2024년 12월 출시 예정"
         />
