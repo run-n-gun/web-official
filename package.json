@@ -1,6 +1,6 @@
 {
-  "name": "runngun-web-official",
-  "version": "0.1.0",
+  "name": "web-official",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
