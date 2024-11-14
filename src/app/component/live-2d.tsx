@@ -1,14 +1,16 @@
 import * as PIXI from 'pixi.js';
 import { Live2DModel } from 'pixi-live2d-display/cubism4';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 const cubism4Model =
   "https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/haru/haru_greeter_t03.model3.json";
-
 
 // @ts-expect-error pixi
 window.PIXI = PIXI;
 
-function Live2d() {
+const Live2d =()=> {
+  const [app, setApp] = useState<PIXI.Application>()
+
   useEffect(() => {
     const canvas = document.getElementById('canvas') as HTMLCanvasElement;
 
@@ -18,7 +20,18 @@ function Live2d() {
 
     const app = new PIXI.Application({
       view: canvas,
+      resizeTo: window,
     });
+
+    setApp(app)
+  }, [])
+
+  useEffect(() => {
+    if (!app) {
+      return;
+    }
+
+    console.log('----- app exist')
 
     // no `await` here as it's not a Promise
     const model = Live2DModel.fromSync(cubism4Model);
@@ -26,10 +39,9 @@ function Live2d() {
     model.once('load', () => {
       // now it's safe
       app.stage.addChild(model);
-      model.scale.set(0.25);
-      model.x = 10;
+      model.scale.set(0.15);
     });
-  }, [])
+  }, [app])
 
   return (
     <div>
