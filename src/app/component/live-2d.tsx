@@ -45,7 +45,7 @@ const Live2d =()=> {
 
   return (
     <div>
-      <h3>ahsdjkfh</h3>
+      <h3>Webview!</h3>
       <canvas id="canvas"></canvas>
     </div>
   );
