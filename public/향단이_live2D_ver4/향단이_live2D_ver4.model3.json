@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "향단이_live2D_ver4.moc3",
+		"Textures": [
+			"향단이_live2D_ver4.2048/texture_00.png"
+		],
+		"Physics": "향단이_live2D_ver4.physics3.json",
+		"DisplayInfo": "향단이_live2D_ver4.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
