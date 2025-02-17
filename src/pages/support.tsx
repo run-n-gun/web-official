@@ -7,7 +7,7 @@ const SupportPage = () => {
         <Image src="/images/default-white-orange.png" alt="LOGO" width={300} height={300} />
         <div style={styles.slogan}>
           <p>This is Run&Gun Inc.</p>
-          <p>the developer of Bell`s Nail Art Salon.</p>
+          <p>the developer of Meow Island & Bell`s Nail Art Salon.</p>
           <p>If you have any inquiries regarding account data deletion, restoration, or withdrawal,</p>
           <p>please send the Google or Apple account information you used for data integration to support@runngun.fun.</p>
         </div>
